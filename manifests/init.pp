@@ -17,7 +17,7 @@ class install_firefox (
         }
 
 
-        package { 'Firefox':
+        package { 'Mozilla Firefox 36.0.1 (x86 en-US)':
           ensure => installed,
           source => "${staging_windir}\\install_firefox\\${exe}",
           require => [ Staging::File[$exe], Acl["${staging_windir}/install_firefox/${exe}"] ],
